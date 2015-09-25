@@ -1,0 +1,21 @@
+{
+  "uuid": "532e299f-4b0f-44e5-881e-bc4e1796ae97",
+  "shortName": "AppOfTheWeek",
+  "longName": "AppOfTheWeek",
+  "companyName": "Matthew Hungerford",
+  "versionCode": 1,
+  "versionLabel": "1.0",
+  "capabilities": [
+    "configurable"
+  ],
+  "watchapp": {
+    "watchface": false
+  },
+  "resources": {
+    "media": []
+  },
+  "targetPlatforms": [
+    "chalk"
+  ],
+  "sdkVersion": "3"
+}
