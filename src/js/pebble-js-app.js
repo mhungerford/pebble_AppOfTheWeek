@@ -20,11 +20,8 @@ Pebble.addEventListener("appmessage", function(e) {
 });
 
 function openWebview(e) {
-  //url = 'http://apps.getpebble.com/applications/556bf9c4389795518100008d';
-  url = 'pebble://appstore/556bf9c4389795518100008d';
-  //url = (url === null ? 'http://google.com' : url);
-  console.log("showing " + url);
-  Pebble.openURL("data:text/html,"+encodeURI('<!DOCTYPE html><html><head><title>AppOfTheWeek</title> <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"></head><script language="javascript">setTimeout(function(){window.open("' + url + '")},0);</script><a href="' + url + '">Click here</a><body>Redirect to app of the Week</body></html><!--.html'));
+  url = 'http://apps.getpebble.com/applications/556bf9c4389795518100008d';
+  Pebble.openURL(url);
 }
 
 Pebble.addEventListener("showConfiguration", openWebview);
